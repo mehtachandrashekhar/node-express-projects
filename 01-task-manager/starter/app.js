@@ -7,7 +7,7 @@ const tasks = require('./routes/tasks')
 app.use(express.json())
 
 //routes
-app.get('/hello',(req,res)=>{
+app.get('/hello', (req, res) => {
     res.send('Task Manager App')
 })
 
