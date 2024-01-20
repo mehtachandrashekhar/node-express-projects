@@ -13,11 +13,11 @@ app.get('/hello', (req, res) => {
 
 app.use('/api/v1/tasks', tasks)
 
-// app.get('api/v1/tasks')
-// app.post('api/v1/tasks')
-// app.get('api/v1/tasks/:id')
-// app.patch('api/v1/tasks/:id') // option to app.put
-// app.delete('api/v1/tasks/:id')
+// app.get('api/v1/tasks')          -Get All Task
+// app.post('api/v1/tasks')         -Create Task
+// app.get('api/v1/tasks/:id')      -Get Task
+// app.patch('api/v1/tasks/:id')    -Update Task
+// app.delete('api/v1/tasks/:id')   -Delete Task
 
 const port = 3000
 
