@@ -1,8 +1,1 @@
-const mongoose = require('mongoose')
-
-const connectionString = 'mongodb+srv://chandra_11:s6PAQmI3KVm11q2N@cluster11.aggl6wf.mongodb.net/?retryWrites=true&w=majority'
-
-mongoose
-.connect(connectionString)
-.then(() => { console.log('Connected to the Database') })
-.catch((err) => console.log(err))
+const connectionString = 'mongodb+srv://chandrashehkar11:<password>@cluster11.aggl6wf.mongodb.net/?retryWrites=true&w=majority'
