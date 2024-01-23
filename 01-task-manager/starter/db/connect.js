@@ -4,12 +4,11 @@ dotenv.config()
 
 const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster11.aggl6wf.mongodb.net/?retryWrites=true&w=majority`
 
-mongoose
-    .connect(connectionString, {
-        useNewUrlParser: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-        useUnifiedTopology: true,
-    })
-    .then(() => { console.log('Connected to the Database') })
-    .catch((err) => console.log(err))
+const connectDB = (url) => {
+    return mongoose.connect(connectionString, {
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useFindAndModify: false,
+            useUnifiedTopology: true,
+        })
+}
