@@ -32,4 +32,17 @@ const start = async () => {
     }
 }
 
+//  Another Menthod
+// MONGO_URI is equal to connecion string in .env file
+
+// const start = async (process.env.MONGO_URI) => {
+//     try {
+//         await connectDB
+//         app.listen(port, console.log(`Server is listening on ${port}...`))
+//     }
+//     catch (error) {
+//         console.log(error);
+//     }
+// }
+
 start()
