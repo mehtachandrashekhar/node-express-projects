@@ -17,14 +17,15 @@ app.get('/hello', (req, res) => {
 
 app.use('/api/v1/tasks', tasks)
 
+const port = 3000
 // app.get('api/v1/tasks')          -Get All Task
 // app.post('api/v1/tasks')         -Create Task
 // app.get('api/v1/tasks/:id')      -Get Task
 // app.patch('api/v1/tasks/:id')    -Update Task
 // app.delete('api/v1/tasks/:id')   -Delete Task
 
-const port = 3000
 
+//  Another Menthod
 // const start = async () => {
 //     try {
 //         await connectDB
@@ -35,7 +36,6 @@ const port = 3000
 //     }
 // }
 
-//  Another Menthod
 // MONGO_URI is equal to connecion string in .env file
 
 const start = async () => {
