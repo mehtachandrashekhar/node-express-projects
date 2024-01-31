@@ -26,17 +26,6 @@ const port = 3000
 // app.delete('api/v1/tasks/:id')   -Delete Task
 
 
-//  Another Menthod
-// const start = async () => {
-//     try {
-//         await connectDB
-//         app.listen(port, console.log(`Server is listening on ${port}...`))
-//     }
-//     catch (error) {
-//         console.log(error);
-//     }
-// }
-
 // MONGO_URI is equal to connecion string in .env file
 
 const start = async () => {
